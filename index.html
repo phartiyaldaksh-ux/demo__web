@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courtly | Book Sports Venues</title>
+    <meta
+      name="description"
+      content="Book football turfs, cricket grounds, and badminton courts near you."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="logo-wrap">
+          <div class="logo-mark">C</div>
+          <span>Courtly</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#venues">Venues</a>
+          <a href="#how">How it works</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <a href="#booking" class="btn btn-primary nav-btn">Book now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Play anytime, anywhere</p>
+            <h1>
+              Find your court.<br />
+              <span>Own your hour.</span>
+            </h1>
+
+            <p class="hero-description">
+              Book football turfs, cricket grounds, and badminton courts near you.
+              Instant discovery, flexible slots, and smooth checkouts in minutes.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#venues" class="btn btn-primary">Explore venues</a>
+              <a href="#how" class="btn btn-secondary">How it works</a>
+            </div>
+
+            <ul class="social-proof" aria-label="Trusted by sports lovers">
+              <li><strong>12k+</strong><span>Active players</span></li>
+              <li><strong>2.4k</strong><span>Venues</span></li>
+              <li><strong>4.9/5</strong><span>User rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" id="booking">
+            <div class="panel-header">
+              <p>Quick booking</p>
+              <span>Live availability</span>
+            </div>
+
+            <div class="booking-form" aria-label="Booking form">
+              <label>
+                <span>Sport</span>
+                <select id="venue-select">
+                  <option value="0">Sky Turf Arena</option>
+                  <option value="1">Green Park Cricket</option>
+                  <option value="2">Smash Zone</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Date</span>
+                <input id="booking-date" type="date" value="2026-10-29" />
+              </label>
+
+              <label>
+                <span>Duration</span>
+                <select id="duration">
+                  <option value="1">1 hour</option>
+                  <option value="2">2 hours</option>
+                  <option value="3">3 hours</option>
+                  <option value="4">4 hours</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="summary-box" aria-live="polite">
+              <div class="summary-row">
+                <span>Rate</span>
+                <strong id="sum-rate">₹0</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <strong id="sum-total">₹0</strong>
+              </div>
+            </div>
+
+            <p id="booking-message" class="booking-status" aria-live="polite"></p>
+            <button id="reserve-btn" class="btn btn-primary full-width" type="button">Reserve slot</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="how">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>Better booking in three simple steps</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">01</div>
+              <h3>Search nearby</h3>
+              <p>Find turf and court options by sport, location, and time slot.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">02</div>
+              <h3>Compare instantly</h3>
+              <p>Check pricing, availability, surface quality, and amenities.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">03</div>
+              <h3>Book and play</h3>
+              <p>Reserve in under a minute and head straight to the match.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="venues" id="venues">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Popular venues</p>
+              <h2>Play where the energy is</h2>
+            </div>
+            <a href="#" class="text-link">View all venues</a>
+          </div>
+
+          <div class="venue-grid" id="venue-grid"></div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Player stories</p>
+            <h2>Trusted by local sports communities</h2>
+          </div>
+
+          <div class="review-grid">
+            <blockquote>
+              “Booked a football turf in under two minutes. The process was clean,
+              quick, and super dependable.”
+              <footer>— Arjun, weekend player</footer>
+            </blockquote>
+
+            <blockquote>
+              “The venue filtering saved us a lot of time before our inter-club match.”
+              <footer>— Priya, badminton club coach</footer>
+            </blockquote>
+
+            <blockquote>
+              “Clear pricing and instant confirmations made planning our practice easier.”
+              <footer>— Kabir, cricket enthusiast</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <div class="logo-wrap">
+            <div class="logo-mark">C</div>
+            <span>Courtly</span>
+          </div>
+        </div>
+        <p>© 2026 Courtly. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
